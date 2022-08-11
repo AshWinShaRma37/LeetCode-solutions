@@ -3,6 +3,9 @@ class Solution:
         left = 0 
         right = 1 
         max_profit = 0
+        #having a cursor at left and right 
+        #left is for buying and right is for sellling
+        #generating different profits and moving the cursor
         while right < len(prices):
             currentProfit = prices[right] - prices[left] 
             if prices[left] < prices[right]:
