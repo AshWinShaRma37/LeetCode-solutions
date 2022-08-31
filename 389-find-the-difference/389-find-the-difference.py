@@ -1,8 +1,8 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        st = s+t
-        for a in st:
-            if st.count(a)%2==1:
+        #concating both the string and checking if any character counts is odd
+        for a in (s+t):
+            if (s+t).count(a)%2==1:
                 return a
         
             
